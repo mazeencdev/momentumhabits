@@ -1,0 +1,253 @@
+<svg width="750" height="980" viewBox="0 0 750 980" xmlns="http://www.w3.org/2000/svg" font-family="Poppins, system-ui, -apple-system, sans-serif">
+
+  <defs>
+    <!-- Background gradients -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C1F14"/>
+      <stop offset="48%" stop-color="#0E2418"/>
+      <stop offset="100%" stop-color="#070F09"/>
+    </linearGradient>
+    <radialGradient id="bg-glow" cx="50%" cy="38%" r="52%">
+      <stop offset="0%" stop-color="#1A4A2A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#070F09" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#040C06" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- Dot grid -->
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="#2D6A4F" opacity="0.35"/>
+    </pattern>
+
+    <!-- Card shadow (heavier for light cards on dark bg) -->
+    <filter id="card-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="12" stdDeviation="26" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Green bar gradient (for bar chart) -->
+    <linearGradient id="g-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#3D8B65"/>
+    </linearGradient>
+
+    <!-- Softer bar (inactive days) -->
+    <linearGradient id="g-bar-soft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6bdca9"/>
+      <stop offset="100%" stop-color="#9EECC5"/>
+    </linearGradient>
+
+    <!-- Progress ring gradient -->
+    <linearGradient id="g-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#6bdca9"/>
+    </linearGradient>
+
+    <!-- Logo gradient -->
+    <linearGradient id="g-logo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#52B788"/>
+    </linearGradient>
+
+    <!-- Motivation card gradient -->
+    <linearGradient id="g-quote" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#1B4332"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════
+       BACKGROUND
+  ════════════════════════════════════════════ -->
+  <rect width="750" height="980" fill="url(#bg-grad)"/>
+  <rect width="750" height="980" fill="url(#bg-glow)"/>
+  <rect width="750" height="980" fill="url(#dots)"/>
+  <rect width="750" height="980" fill="url(#vignette)"/>
+
+
+  <!-- ═══════════════════════════════════════════
+       CARD A — Stats Overview
+       Size: 335×215  Center: (222, 222)
+       Rotate -4° around center
+  ════════════════════════════════════════════ -->
+  <g transform="rotate(-4, 222, 222)" filter="url(#card-shadow)">
+    <g transform="translate(55, 114)">
+      <!-- Card body: cream bg -->
+      <rect width="335" height="216" rx="18" fill="#F9F7F4"/>
+
+      <!-- Header -->
+      <text x="18" y="30" font-size="12.5" font-weight="600" fill="#1C1C1C">Overview</text>
+      <text x="18" y="46" font-size="9" fill="#9CA3AF">Updated just now</text>
+
+      <!-- ── Stat 1: Total Habits ── -->
+      <g transform="translate(18, 62)">
+        <!-- Emoji icon bg -->
+        <rect width="34" height="34" rx="9" fill="#2D6A4F1A"/>
+        <text x="8" y="24" font-size="16">🎯</text>
+        <!-- Text -->
+        <text x="44" y="14" font-size="9" fill="#6B7280" font-weight="500">Total Habits</text>
+        <text x="44" y="31" font-size="21" font-weight="700" fill="#2D6A4F">12</text>
+        <text x="44" y="46" font-size="8.5" fill="#9CA3AF">Across all categories</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="18" y1="123" x2="317" y2="123" stroke="#E5E7EB" stroke-width="1"/>
+
+      <!-- ── Stat 2: Weekly Score ── -->
+      <g transform="translate(18, 133)">
+        <rect width="34" height="34" rx="9" fill="#2D6A4F1A"/>
+        <text x="8" y="24" font-size="16">⭐</text>
+        <text x="44" y="14" font-size="9" fill="#6B7280" font-weight="500">Weekly Score</text>
+        <text x="44" y="31" font-size="21" font-weight="700" fill="#2D6A4F">87%</text>
+        <text x="44" y="46" font-size="8.5" fill="#9CA3AF">This week</text>
+
+        <!-- Streak badge on right -->
+        <rect x="195" y="0" width="108" height="34" rx="9" fill="#2D6A4F"/>
+        <text x="211" y="13" font-size="8.5" fill="#6bdca9" font-weight="600">Best Streak</text>
+        <text x="211" y="27" font-size="13" font-weight="700" fill="white">🔥 14 days</text>
+      </g>
+    </g>
+  </g>
+
+
+  <!-- ═══════════════════════════════════════════
+       CARD B — This Week Bar Chart
+       Size: 340×215  Center: (462, 325)
+       Rotate +3° around center
+  ════════════════════════════════════════════ -->
+  <g transform="rotate(3, 462, 325)" filter="url(#card-shadow)">
+    <g transform="translate(292, 218)">
+      <rect width="340" height="215" rx="18" fill="#F9F7F4"/>
+
+      <!-- Header -->
+      <text x="18" y="30" font-size="12.5" font-weight="600" fill="#1C1C1C">This Week</text>
+      <text x="18" y="46" font-size="9" fill="#9CA3AF">Daily completion rate</text>
+
+      <!-- Weekly bar chart (chart area: x=18..322, bottom=168, maxH=95) -->
+      <!-- Bar width 36, gap 10 -->
+      <!-- Scores: Mon 100, Tue 75, Wed 90, Thu 60, Fri 85, Sat 40, Sun 70 -->
+
+      <!-- Mon: 100% → h=95 → y=73 -->
+      <rect x="18"  y="73"  width="36" height="95" rx="6" fill="url(#g-bar)"/>
+      <!-- Tue: 75% → h=71 → y=97 -->
+      <rect x="64"  y="97"  width="36" height="71" rx="6" fill="url(#g-bar)"/>
+      <!-- Wed: 90% → h=85 → y=83 -->
+      <rect x="110" y="83"  width="36" height="85" rx="6" fill="url(#g-bar)"/>
+      <!-- Thu: 60% → h=57 → y=111 -->
+      <rect x="156" y="111" width="36" height="57" rx="6" fill="url(#g-bar-soft)"/>
+      <!-- Fri: 85% → h=81 → y=87 -->
+      <rect x="202" y="87"  width="36" height="81" rx="6" fill="url(#g-bar)"/>
+      <!-- Sat: 40% → h=38 → y=130 -->
+      <rect x="248" y="130" width="36" height="38" rx="6" fill="url(#g-bar-soft)"/>
+      <!-- Sun: 70% → h=66 → y=102 -->
+      <rect x="294" y="102" width="36" height="66" rx="6" fill="url(#g-bar)"/>
+
+      <!-- Percentage labels above bars -->
+      <text x="36"  y="68"  font-size="8" fill="#2D6A4F" font-weight="700" text-anchor="middle">100%</text>
+      <text x="82"  y="92"  font-size="8" fill="#2D6A4F" font-weight="700" text-anchor="middle">75%</text>
+      <text x="128" y="78"  font-size="8" fill="#2D6A4F" font-weight="700" text-anchor="middle">90%</text>
+      <text x="174" y="106" font-size="8" fill="#6bdca9" font-weight="700" text-anchor="middle">60%</text>
+      <text x="220" y="82"  font-size="8" fill="#2D6A4F" font-weight="700" text-anchor="middle">85%</text>
+      <text x="266" y="125" font-size="8" fill="#6bdca9" font-weight="700" text-anchor="middle">40%</text>
+      <text x="312" y="97"  font-size="8" fill="#2D6A4F" font-weight="700" text-anchor="middle">70%</text>
+
+      <!-- Day labels -->
+      <text x="36"  y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Mon</text>
+      <text x="82"  y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Tue</text>
+      <text x="128" y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Wed</text>
+      <text x="174" y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Thu</text>
+      <text x="220" y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Fri</text>
+      <text x="266" y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Sat</text>
+      <text x="312" y="184" font-size="8.5" fill="#9CA3AF" text-anchor="middle">Sun</text>
+
+      <!-- Baseline -->
+      <line x1="18" y1="168" x2="322" y2="168" stroke="#E5E7EB" stroke-width="1"/>
+    </g>
+  </g>
+
+
+  <!-- ═══════════════════════════════════════════
+       CARD C — Today's Habits
+       Size: 460×190  Center: (300, 540)
+       Rotate -2° around center
+  ════════════════════════════════════════════ -->
+  <g transform="rotate(-2, 300, 540)" filter="url(#card-shadow)">
+    <g transform="translate(70, 445)">
+      <rect width="460" height="190" rx="18" fill="#F9F7F4"/>
+
+      <!-- Header row -->
+      <text x="18" y="30" font-size="12.5" font-weight="600" fill="#1C1C1C">Today's Habits</text>
+      <!-- Badge -->
+      <rect x="153" y="17" width="58" height="20" rx="10" fill="#6bdca940"/>
+      <text x="182" y="31" font-size="8.5" fill="#2D6A4F" font-weight="600" text-anchor="middle">4 habits</text>
+
+      <!-- Habit row 1: Meditation -->
+      <g transform="translate(10, 46)">
+        <rect width="440" height="34" rx="10" fill="white" opacity="0.6"/>
+        <text x="12" y="22" font-size="18">🧘</text>
+        <text x="38" y="17" font-size="10" font-weight="600" fill="#374151">Meditation</text>
+        <text x="38" y="29" font-size="8.5" fill="#9CA3AF">Daily · ⏰ 7:00 AM</text>
+        <!-- Category pill -->
+        <rect x="350" y="9" width="76" height="18" rx="9" fill="#F3E8FF"/>
+        <text x="388" y="21" font-size="8" fill="#7C3AED" font-weight="600" text-anchor="middle">Mindfulness</text>
+        <!-- Streak -->
+        <text x="314" y="21" font-size="8.5" fill="#2D6A4F" font-weight="600" text-anchor="end">🔥 9 days</text>
+      </g>
+
+      <!-- Habit row 2: Morning Workout -->
+      <g transform="translate(10, 86)">
+        <rect width="440" height="34" rx="10" fill="white" opacity="0.6"/>
+        <text x="12" y="22" font-size="18">💪</text>
+        <text x="38" y="17" font-size="10" font-weight="600" fill="#374151">Morning Workout</text>
+        <text x="38" y="29" font-size="8.5" fill="#9CA3AF">Daily · ⏰ 6:30 AM</text>
+        <rect x="362" y="9" width="64" height="18" rx="9" fill="#FEE2E2"/>
+        <text x="394" y="21" font-size="8" fill="#DC2626" font-weight="600" text-anchor="middle">Fitness</text>
+        <text x="314" y="21" font-size="8.5" fill="#2D6A4F" font-weight="600" text-anchor="end">🔥 14 days</text>
+      </g>
+
+      <!-- Habit row 3: Read 30 min -->
+      <g transform="translate(10, 126)">
+        <rect width="440" height="34" rx="10" fill="white" opacity="0.6"/>
+        <text x="12" y="22" font-size="18">📚</text>
+        <text x="38" y="17" font-size="10" font-weight="600" fill="#374151">Read 30 min</text>
+        <text x="38" y="29" font-size="8.5" fill="#9CA3AF">Daily · ⏰ 9:00 PM</text>
+        <rect x="364" y="9" width="62" height="18" rx="9" fill="#DBEAFE"/>
+        <text x="395" y="21" font-size="8" fill="#1D4ED8" font-weight="600" text-anchor="middle">Learning</text>
+        <text x="314" y="21" font-size="8.5" fill="#2D6A4F" font-weight="600" text-anchor="end">🔥 6 days</text>
+      </g>
+
+      <!-- Habit row 4: Eat Healthy -->
+      <g transform="translate(10, 166)">
+        <rect width="440" height="14" rx="7" fill="white" opacity="0.4"/>
+        <text x="12" y="11" font-size="14">🥗</text>
+        <text x="35" y="11" font-size="9.5" font-weight="600" fill="#374151">Eat Healthy</text>
+        <rect x="368" y="1" width="64" height="14" rx="7" fill="#D1FAE5"/>
+        <text x="400" y="11" font-size="7.5" fill="#065F46" font-weight="600" text-anchor="middle">Health</text>
+      </g>
+    </g>
+  </g>
+
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM — Logo + App Name + Tagline
+  ════════════════════════════════════════════ -->
+
+  <!-- Actual Momentum logo (scaled 200→100px, positioned at 325,704) -->
+  <g transform="translate(325, 704) scale(0.5)">
+    <rect width="200" height="200" rx="44" ry="44" fill="#2D6A4F"/>
+    <path d="M108 30L54 108h46l-8 62 54-78h-46z" fill="white"/>
+  </g>
+
+  <!-- App name -->
+  <text x="375" y="838" font-size="36" font-weight="800" fill="#F9F7F4" text-anchor="middle" letter-spacing="-0.5">Momentum</text>
+
+  <!-- Tagline -->
+  <text x="375" y="874" font-size="17" font-weight="600" fill="#F9F7F4" text-anchor="middle">Build habits that</text>
+  <text x="375" y="897" font-size="17" font-weight="300" fill="#6bdca9" text-anchor="middle">actually stick.</text>
+
+  <!-- Body copy -->
+  <text x="375" y="930" font-size="11.5" fill="#52735E" text-anchor="middle">Track streaks, celebrate wins, and stay consistent —</text>
+  <text x="375" y="947" font-size="11.5" fill="#52735E" text-anchor="middle">Momentum keeps your best habits alive.</text>
+
+</svg>

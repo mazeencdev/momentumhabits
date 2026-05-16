@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" rx="20" fill="#0B0B0F"/>
+  <text x="30" y="50" fill="#FFFFFF" font-size="18" font-family="Inter, sans-serif">
+    Progress Overview
+  </text>
+
+  <rect x="30" y="80" width="160" height="80" rx="12" fill="#15151B"/>
+  <text x="45" y="110" fill="#9CA3AF" font-size="12">Streak</text>
+  <text x="45" y="140" fill="#FFFFFF" font-size="20">7 days</text>
+
+  <rect x="210" y="80" width="160" height="80" rx="12" fill="#15151B"/>
+  <text x="225" y="110" fill="#9CA3AF" font-size="12">Consistency</text>
+  <text x="225" y="140" fill="#FFFFFF" font-size="20">85%</text>
+
+  <rect x="390" y="80" width="160" height="80" rx="12" fill="#15151B"/>
+  <text x="405" y="110" fill="#9CA3AF" font-size="12">Completed</text>
+  <text x="405" y="140" fill="#FFFFFF" font-size="20">142</text>
+
+  <rect x="30" y="180" width="520" height="160" rx="12" fill="#15151B"/>
+
+  <polyline 
+    points="50,300 120,260 190,280 260,220 330,240 400,200 470,210"
+    fill="none"
+    stroke="#4F46E5"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <circle cx="50" cy="300" r="4" fill="#4F46E5"/>
+  <circle cx="120" cy="260" r="4" fill="#4F46E5"/>
+  <circle cx="190" cy="280" r="4" fill="#4F46E5"/>
+  <circle cx="260" cy="220" r="4" fill="#4F46E5"/>
+  <circle cx="330" cy="240" r="4" fill="#4F46E5"/>
+  <circle cx="400" cy="200" r="4" fill="#4F46E5"/>
+  <circle cx="470" cy="210" r="4" fill="#4F46E5"/>
+</svg>

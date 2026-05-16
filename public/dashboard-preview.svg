@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1440 828" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="1440" height="828" fill="#f5f5f5"/>
+
+  <!-- Sidebar -->
+  <rect x="16" y="16" width="272" height="796" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Logo area -->
+  <!-- Momentum green icon -->
+  <rect x="32" y="32" width="36" height="36" rx="8" fill="#2D6A4F"/>
+  <text x="50" y="55" text-anchor="middle" font-size="20" font-weight="bold" fill="white">⚡</text>
+  <text x="78" y="58" font-size="20" font-weight="700" fill="#111827">Momentum</text>
+
+  <!-- MENU label -->
+  <text x="32" y="100" font-size="10" font-weight="500" fill="#9ca3af" letter-spacing="1.5">MENU</text>
+
+  <!-- Sidebar nav items -->
+  <!-- Dashboard -->
+  <rect x="24" y="110" width="256" height="36" rx="8" fill="#f0fdf4"/>
+  <text x="44" y="133" font-size="15" fill="#2D6A4F">⊞</text>
+  <text x="64" y="133" font-size="15" fill="#111827">Dashboard</text>
+
+  <!-- Habits -->
+  <text x="44" y="175" font-size="15" fill="#9ca3af">↗</text>
+  <text x="64" y="175" font-size="15" fill="#6b7280">Habits</text>
+
+  <!-- Progress -->
+  <text x="44" y="215" font-size="15" fill="#9ca3af">▦</text>
+  <text x="64" y="215" font-size="15" fill="#6b7280">Progress</text>
+
+  <!-- GENERAL label -->
+  <text x="32" y="260" font-size="10" font-weight="500" fill="#9ca3af" letter-spacing="1.5">GENERAL</text>
+
+  <!-- Settings -->
+  <text x="44" y="295" font-size="15" fill="#9ca3af">⚙</text>
+  <text x="64" y="295" font-size="15" fill="#6b7280">Settings</text>
+
+  <!-- Help -->
+  <text x="44" y="335" font-size="15" fill="#9ca3af">?</text>
+  <text x="64" y="335" font-size="15" fill="#6b7280">Help</text>
+
+  <!-- Logout -->
+  <text x="44" y="375" font-size="15" fill="#9ca3af">→</text>
+  <text x="64" y="375" font-size="15" fill="#6b7280">Logout</text>
+
+  <!-- Main content area -->
+  <rect x="304" y="16" width="1120" height="796" rx="12" fill="white"/>
+
+  <!-- Top bar -->
+  <!-- Search bar -->
+  <rect x="320" y="28" width="360" height="40" rx="20" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="344" y="53" font-size="13" fill="#9ca3af">Search Habits</text>
+
+  <!-- Top right icons -->
+  <!-- Email icon -->
+  <circle cx="1086" cy="48" r="18" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="1086" y="54" text-anchor="middle" font-size="14" fill="#6b7280">✉</text>
+
+  <!-- Bell icon -->
+  <circle cx="1136" cy="48" r="18" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="1136" y="54" text-anchor="middle" font-size="14" fill="#6b7280">🔔</text>
+
+  <!-- User avatar -->
+  <circle cx="1194" cy="48" r="20" fill="#2D6A4F"/>
+  <text x="1194" y="54" text-anchor="middle" font-size="14" font-weight="bold" fill="white">R</text>
+  <text x="1222" y="43" font-size="13" font-weight="600" fill="#111827">Random</text>
+  <text x="1222" y="59" font-size="11" fill="#6b7280">mazeen.chawdhury@gmail.com</text>
+
+  <!-- Dashboard title -->
+  <text x="320" y="110" font-size="26" font-weight="700" fill="#111827">Dashboard</text>
+  <text x="320" y="132" font-size="14" fill="#6b7280">Welcome back, Random</text>
+
+  <!-- Add Habit button -->
+  <rect x="1264" y="96" width="144" height="40" rx="8" fill="#2D6A4F"/>
+  <text x="1336" y="121" text-anchor="middle" font-size="14" font-weight="600" fill="white">+ Add Habit</text>
+
+  <!-- Stats cards row -->
+  <!-- Card 1: Total Habits -->
+  <rect x="320" y="152" width="248" height="116" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="336" y="178" font-size="13" fill="#6b7280">Total Habits</text>
+  <text x="494" y="172" font-size="22">🎯</text>
+  <text x="336" y="220" font-size="32" font-weight="700" fill="#111827">1</text>
+  <text x="336" y="254" font-size="12" fill="#9ca3af">Across all categories</text>
+
+  <!-- Card 2: Daily Habits -->
+  <rect x="584" y="152" width="248" height="116" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="600" y="178" font-size="13" fill="#6b7280">Daily Habits</text>
+  <text x="758" y="172" font-size="22">✅</text>
+  <text x="600" y="220" font-size="32" font-weight="700" fill="#111827">1</text>
+  <text x="600" y="254" font-size="12" fill="#9ca3af">Recurring every day</text>
+
+  <!-- Card 3: Weekly Score -->
+  <rect x="848" y="152" width="248" height="116" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="864" y="178" font-size="13" fill="#6b7280">Weekly Score</text>
+  <text x="1022" y="172" font-size="22">⭐</text>
+  <text x="864" y="220" font-size="32" font-weight="700" fill="#111827">0%</text>
+  <text x="864" y="254" font-size="12" fill="#9ca3af">This week</text>
+
+  <!-- Card 4: Categories -->
+  <rect x="1112" y="152" width="292" height="116" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="1128" y="178" font-size="13" fill="#6b7280">Categories</text>
+  <text x="1378" y="172" font-size="22">🗂</text>
+  <text x="1128" y="220" font-size="32" font-weight="700" fill="#111827">1</text>
+  <text x="1128" y="254" font-size="12" fill="#9ca3af">Active categories</text>
+
+  <!-- Today's Habits section -->
+  <rect x="320" y="284" width="1084" height="280" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="336" y="318" font-size="16" font-weight="600" fill="#111827">Today's Habits</text>
+
+  <!-- Habits badge -->
+  <rect x="1294" y="302" width="94" height="28" rx="14" fill="#f0fdf4"/>
+  <text x="1341" y="321" text-anchor="middle" font-size="12" fill="#2D6A4F">1 habits</text>
+
+  <!-- Habit item -->
+  <text x="344" y="375" font-size="22">💪</text>
+  <text x="374" y="370" font-size="14" font-weight="600" fill="#111827">working out</text>
+  <text x="374" y="389" font-size="12" fill="#9ca3af">Daily</text>
+  <text x="1240" y="373" font-size="13" fill="#6b7280">Fitness</text>
+  <!-- Checkbox circle -->
+  <circle cx="1378" cy="370" r="12" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <!-- Bottom row -->
+  <!-- This Week chart -->
+  <rect x="320" y="580" width="540" height="216" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="336" y="614" font-size="16" font-weight="600" fill="#111827">This Week</text>
+  <text x="336" y="634" font-size="12" fill="#9ca3af">Daily completion rate</text>
+
+  <!-- Day labels -->
+  <text x="366" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Mon</text>
+  <text x="434" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Tue</text>
+  <text x="502" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Wed</text>
+  <text x="570" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Thu</text>
+  <text x="638" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Fri</text>
+  <text x="706" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Sat</text>
+  <text x="774" y="776" text-anchor="middle" font-size="11" fill="#9ca3af">Sun</text>
+  <!-- Chart baseline -->
+  <line x1="336" y1="762" x2="844" y2="762" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Monthly Progress -->
+  <rect x="876" y="580" width="400" height="216" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="892" y="614" font-size="16" font-weight="600" fill="#111827">Monthly Progress</text>
+
+  <!-- Donut ring -->
+  <circle cx="940" cy="706" r="46" fill="none" stroke="#e5e7eb" stroke-width="10"/>
+  <circle cx="940" cy="706" r="46" fill="none" stroke="#2D6A4F" stroke-width="10"
+          stroke-dasharray="29 260" stroke-linecap="round" transform="rotate(-90 940 706)"/>
+  <text x="940" y="712" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">7%</text>
+
+  <text x="1000" y="696" font-size="14" font-weight="600" fill="#111827">Just getting started!</text>
+  <text x="1000" y="714" font-size="12" fill="#6b7280">You've completed 7% of your</text>
+  <text x="1000" y="730" font-size="12" fill="#6b7280">habits this month.</text>
+  <text x="892" y="780" font-size="12" fill="#9ca3af">Keep it up!</text>
+
+  <!-- Daily Motivation card -->
+  <rect x="1292" y="580" width="332" height="216" rx="12" fill="#2D6A4F"/>
+  <text x="1308" y="614" font-size="10" font-weight="600" fill="#86efac" letter-spacing="1.5">DAILY MOTIVATION</text>
+  <!-- Quote marks (decorative) -->
+  <text x="1308" y="660" font-size="14" fill="white" opacity="0.9">"Small habits don't add up, they</text>
+  <text x="1308" y="682" font-size="14" fill="white" opacity="0.9">compound. That's the power of</text>
+  <text x="1308" y="704" font-size="14" fill="white" opacity="0.9">Momentum."</text>
+  <line x1="1308" y1="728" x2="1340" y2="728" stroke="#86efac" stroke-width="1.5"/>
+  <text x="1308" y="750" font-size="12" fill="#86efac">— James Clear</text>
+</svg>

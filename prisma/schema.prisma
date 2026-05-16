@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "../app/generated/prisma"
+}
+
+datasource db {
+  provider  = "postgresql"
+}
+
+model User {
+  id       String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name     String
+  email    String @unique
+  createdAt DateTime @default(now())
+
+  habits    Habit[]
+}
+
+model Habit {
+  id           String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name         String
+  icon         String
+  category     String
+  frequency    String
+  reminderTime String?
+  createdAt    DateTime @default(now())
+
+  userId       String   @db.Uuid
+  user         User     @relation(fields: [userId], references: [id])
+}
