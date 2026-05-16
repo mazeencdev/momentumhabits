@@ -21,7 +21,12 @@ type SidebarProps = {
   onClose?: () => void;
 };
 
-export default function Sidebar({ setActivePage, activePage, open, onClose }: SidebarProps) {
+export default function Sidebar({
+  setActivePage,
+  activePage,
+  open,
+  onClose,
+}: SidebarProps) {
   const router = useRouter();
 
   const handleSignout = async () => {
@@ -46,7 +51,9 @@ export default function Sidebar({ setActivePage, activePage, open, onClose }: Si
       <p className="flex items-center gap-1">
         <Icon
           className={`size-6 transition-all duration-200 ${
-            activePage === page ? "text-[#2D6A4F]" : "group-hover:text-[#2D6A4F]"
+            activePage === page
+              ? "text-[#2D6A4F]"
+              : "group-hover:text-[#2D6A4F]"
           }`}
         />
         {label}
@@ -75,7 +82,12 @@ export default function Sidebar({ setActivePage, activePage, open, onClose }: Si
         {/* Header */}
         <div className="w-full h-fit flex items-center justify-between gap-2 py-2 mb-2">
           <div className="flex items-center gap-2">
-            <Image src={"/momentum-logo.svg"} alt="Momentum_Logo" width={40} height={40} />
+            <Image
+              src={"/momentum-logo.svg"}
+              alt="Momentum_Logo"
+              width={40}
+              height={40}
+            />
             <p className="text-2xl font-bold">Momentum</p>
           </div>
           {/* Close button (mobile only) */}
@@ -89,7 +101,9 @@ export default function Sidebar({ setActivePage, activePage, open, onClose }: Si
 
         {/* Menu section */}
         <div className="w-full h-fit flex flex-col gap-4 py-5 text-black/40">
-          <p className="text-xs font-light text-black/50 uppercase tracking-wide">Menu</p>
+          <p className="text-xs font-light text-black/50 uppercase tracking-wide">
+            Menu
+          </p>
           {navItem("dashboard", Squares2X2Icon, "Dashboard")}
           {navItem("habits", ArrowTrendingUpIcon, "Habits")}
           {navItem("progress", ChartBarIcon, "Progress")}
@@ -97,25 +111,9 @@ export default function Sidebar({ setActivePage, activePage, open, onClose }: Si
 
         {/* General section */}
         <div className="w-full h-fit flex flex-col gap-4 py-5 text-black/40">
-          <p className="text-xs font-light text-black/50 uppercase tracking-wide">General</p>
-          <Link
-            href={"#"}
-            className="text-lg font-normal group hover:text-black transition-all duration-200 hover:bg-[#2d6a4f]/5 rounded-lg px-2 py-1"
-          >
-            <p className="flex items-center gap-1">
-              <Cog6ToothIcon className="size-6 group-hover:text-[#2D6A4F] transition-all duration-200" />
-              Settings
-            </p>
-          </Link>
-          <Link
-            href={"#"}
-            className="text-lg font-normal group hover:text-black transition-all duration-200 hover:bg-[#2d6a4f]/5 rounded-lg px-2 py-1"
-          >
-            <p className="flex items-center gap-1">
-              <QuestionMarkCircleIcon className="size-6 group-hover:text-[#2D6A4F] transition-all duration-200" />
-              Help
-            </p>
-          </Link>
+          <p className="text-xs font-light text-black/50 uppercase tracking-wide">
+            General
+          </p>
           <button
             onClick={handleSignout}
             className="text-lg font-normal group hover:text-black transition-all duration-200 hover:bg-[#2d6a4f]/5 rounded-lg px-2 py-1 text-left"
